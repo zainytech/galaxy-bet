@@ -1,0 +1,223 @@
+.nav{
+    padding:1rem;
+    background-color:#FBC225;
+    position:fixed;
+    z-index:9999999999999;
+    width:100%;
+    border-bottom: #42210B solid 2px;
+}
+.nav-container{
+    margin-left:5rem;
+    margin-right:5rem;
+    display:flex;
+    position: relative;
+}
+.nav-logo{
+    height:3rem;
+    width:5rem;
+}
+.nav-logo img{
+    height:inherit;
+    width:inherit;
+}
+.nav-items{
+    display:flex;
+    color:#42210B;
+    margin-left:12rem;
+}
+.nav-item1{
+    padding:1rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+.nav-item1:hover{
+    border-bottom:#42210B solid 2px;
+    transition: 0.3s;
+}
+.nav-items1-drop{
+    display:none;
+    background-color:#0B1D33;
+    color:white;
+    position: absolute;
+    /* border:red solid 1px; */
+    top:4.3rem;
+    padding:1rem;
+    width:10rem;
+    /* left:5rem; */
+}
+.nav-items-drop-1{
+    padding:1rem;
+}
+.nav-item1a:hover + .nav-items1-drop{
+    display:block;
+}
+.nav-items1-drop:hover + .nav-items1-drop{
+    display:block;
+}
+.nav-items2-drop{
+    display:none;
+    background-color:#0B1D33;
+    color:white;
+    position: absolute;
+    /* border:red solid 1px; */
+    top:4.3rem;
+    padding:1rem;
+    width:10rem;
+    left:33.5rem;
+}
+.nav-items2-drop-1{
+    padding:1rem;
+}
+.nav-item1b:hover + .nav-items2-drop{
+    display:block;
+}
+.nav-items2-drop:hover + .nav-items2-drop{
+    display:block;
+}
+
+.nav-item-right{
+
+    display:flex;
+}
+.nav-lang{
+    padding:1rem;
+    margin-left:5rem;
+    color:white;
+    font-weight: 600;
+    margin-right:2rem;
+    cursor:pointer; 
+}
+.nav-lang:hover{
+    border-bottom: #00C4F4 solid 2px;
+}
+.nav-lang img{
+    margin-left:1rem;
+}
+.nav-lang-drop{
+    display:none;
+    background-color:#0B1D33;
+    color:white;
+    position: absolute;
+    /* border:red solid 1px; */
+    top:4.3rem;
+    padding:1rem;
+    width:5rem;
+    right:11rem;
+}
+.nav-lang-drop-1{
+    padding:0.5rem;
+}
+.nav-lang:hover + .nav-lang-drop{
+    display:block;
+}
+.nav-lang-drop:hover + .nav-lang-drop{
+    display:block;
+}
+.nav-btn{
+}
+.nav-btn button{
+    background-color: transparent;
+    border:#42210B solid 2px;
+    color:#42210B;
+    padding:1rem 3rem 1rem 3rem;
+    border-radius:2rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    right:0;
+}
+.nav-btn button:hover{
+    color:#FBC225;
+    background-color: #42210B;
+}
+/* end of navbar//////// */
+.front-nav-menu{
+    position: absolute;
+    right:0rem;
+    margin-top:0.3rem;
+    display:none;
+    /* border:red solid 1px; */
+}
+
+.front-nav-menu-div{
+    position: fixed;
+    height:100%;
+    width:13rem;
+    z-index:9999999999;
+    right:0;
+    margin-top:5rem;
+    background-color:#FBC225;
+    padding:1rem;
+    display:none;
+    /* border-left:#42210B solid 2px; */
+}
+
+@media screen and (max-width: 1250px) {
+    .front-nav-menu{
+        display:block;
+    }
+    .nav-items{
+        display:none;
+    }
+    .nav-btn button{
+        right:3rem;
+        padding:0.7rem 2rem 0.7rem 2rem;
+        border-radius:2rem;
+    }
+    .front-nav-menu-div{
+        display:block;
+        }
+    .front-resp-nav-items{
+        margin-top:0.5rem;
+        display:block;
+        text-align:left;
+        }
+        .front-resp-nav-item1{
+            position: relative;
+        font-weight: 700;
+        padding:1rem;
+        color:#42210B;
+        display:block;
+        cursor: pointer;
+        }
+        .front-resp-nav-item1:hover{
+            border-bottom:#42210B solid 2px;
+            transition: 0.3s;
+        }
+
+}
+@media screen and (max-width: 900px) {
+    .nav-container{
+        margin-left:2rem;
+        margin-right:2rem;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .nav-btn button{
+        padding:0.5rem 1.5rem 0.5rem 1.5rem;
+        border-radius:2rem;
+        font-size:12px;
+        margin-top:0.3rem;
+    }
+}
+@media screen and (max-width: 430px) {
+    .front-nav-menu-div{
+        width:10rem;
+    }
+    .nav-container{
+        margin-left:1rem;
+        margin-right:1rem;
+    }
+    .nav-btn button{
+        padding:0.5rem 0.7rem 0.5rem 0.7rem;
+        border-radius:2rem;
+        font-size:8px;
+        margin-top:0.3rem;
+        right:2.5rem;
+    }
+    .front-resp-nav-item1{
+    font-size: 14px;
+    padding:0.5rem;
+    }
+}
